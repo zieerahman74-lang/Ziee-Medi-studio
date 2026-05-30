@@ -13,6 +13,34 @@ body{
     color:white;
 }
 
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:#08101f;
+    border-bottom:1px solid #1f2a44;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#00d4ff;
+}
+
 header{
     text-align:center;
     padding:80px 20px;
@@ -56,40 +84,51 @@ header p{
     font-weight:bold;
 }
 </style>
-
 </head>
+
 <body>
 
+<nav>
+    <div class="logo">Ziee Media Studio</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Downloads</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
 <header>
-<h1>Ziee Media Studio</h1>
-<p>Professional Digital Solutions</p>
+    <h1>Ziee Media Studio</h1>
+    <p>Professional Digital Solutions</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<h2>Ziee Media Studio Live</h2>
-<p>OBS, TikTok, YouTube, Facebook, Audio Mixer & Live Alerts.</p>
-<a href="#" class="btn">Coming Soon</a>
-</div>
+    <div class="card">
+        <h2>Ziee Media Studio Live</h2>
+        <p>OBS, TikTok, YouTube, Facebook, Audio Mixer & Live Alerts.</p>
+        <a href="#" class="btn">Coming Soon</a>
+    </div>
 
-<div class="card">
-<h2>Z13 Editor AI</h2>
-<p>Video & Audio Rendering Studio dengan AI Tools.</p>
-<a href="#" class="btn">Coming Soon</a>
-</div>
+    <div class="card">
+        <h2>Z13 Editor AI</h2>
+        <p>Video & Audio Rendering Studio dengan AI Tools.</p>
+        <a href="#" class="btn">Coming Soon</a>
+    </div>
 
-<div class="card">
-<h2>MY LPTQ NTB</h2>
-<p>Sistem MTQ/LPTQ Digital Nasional.</p>
-<a href="#" class="btn">Coming Soon</a>
-</div>
+    <div class="card">
+        <h2>MY LPTQ NTB</h2>
+        <p>Sistem MTQ/LPTQ Digital Nasional.</p>
+        <a href="#" class="btn">Coming Soon</a>
+    </div>
 
-<div class="card">
-<h2>Quran Digital</h2>
-<p>Al-Quran Online & Offline dengan Audio.</p>
-<a href="#" class="btn">Coming Soon</a>
-</div>
+    <div class="card">
+        <h2>Quran Digital</h2>
+        <p>Al-Quran Online & Offline dengan Audio.</p>
+        <a href="#" class="btn">Coming Soon</a>
+    </div>
 
 </div>
 
