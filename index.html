@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ziee Media Studio</title>
+<link rel="icon" href="logo.png" />
 
 <style>
 *{
@@ -20,7 +21,7 @@ body{
 
 nav{
     width:100%;
-    padding:20px 7%;
+    padding:18px 7%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -32,9 +33,18 @@ nav{
 }
 
 .logo{
-    font-size:24px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
     font-weight:800;
-    letter-spacing:0.5px;
+}
+
+.logo img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 .menu a{
@@ -50,10 +60,12 @@ nav{
 }
 
 .hero{
-    min-height:620px;
-    padding:120px 7% 80px;
+    min-height:650px;
+    padding:100px 7% 80px;
     display:flex;
     align-items:center;
+    justify-content:center;
+    text-align:center;
     background:
         radial-gradient(circle at top left, rgba(0,229,255,0.28), transparent 35%),
         radial-gradient(circle at bottom right, rgba(0,255,179,0.18), transparent 35%),
@@ -61,7 +73,16 @@ nav{
 }
 
 .hero-content{
-    max-width:760px;
+    max-width:860px;
+}
+
+.hero-logo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:24px;
+    box-shadow:0 0 45px rgba(0,229,255,0.45);
 }
 
 .badge{
@@ -91,6 +112,7 @@ nav{
 
 .actions{
     display:flex;
+    justify-content:center;
     gap:14px;
     flex-wrap:wrap;
 }
@@ -223,6 +245,11 @@ footer{
         font-size:42px;
     }
 
+    .hero-logo{
+        width:120px;
+        height:120px;
+    }
+
     .hero{
         min-height:auto;
         padding-top:80px;
@@ -239,7 +266,11 @@ footer{
 <body>
 
 <nav>
-    <div class="logo">Ziee Media Studio</div>
+    <div class="logo">
+        <img src="logo.png" alt="Ziee Media Studio Logo">
+        <span>Ziee Media Studio</span>
+    </div>
+
     <div class="menu">
         <a href="#home">Home</a>
         <a href="#products">Products</a>
@@ -250,14 +281,20 @@ footer{
 </nav>
 
 <main id="home">
+
     <section class="hero">
         <div class="hero-content">
+            <img src="logo.png" alt="Ziee Media Studio Logo" class="hero-logo">
+
             <div class="badge">Official Digital Platform</div>
-            <h1>Professional Creative Apps for Streaming, Editing, and Digital Systems.</h1>
+
+            <h1>Ziee Media Studio</h1>
+
             <p>
-                Ziee Media Studio adalah pusat aplikasi digital untuk live streaming,
-                video editing, sistem MTQ/LPTQ, Quran digital, overlay, audio, dan tools kreator.
+                Professional creative platform untuk live streaming, video editing,
+                sistem MTQ/LPTQ, Quran digital, overlay, audio, dan tools kreator.
             </p>
+
             <div class="actions">
                 <a href="#downloads" class="btn btn-primary">Download Apps</a>
                 <a href="#products" class="btn btn-secondary">View Products</a>
@@ -339,6 +376,7 @@ footer{
             <p>Untuk kerja sama, pembelian aplikasi, atau support: Ziee Media Studio.</p>
         </div>
     </section>
+
 </main>
 
 <footer>
